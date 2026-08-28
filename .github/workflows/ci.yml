@@ -23,4 +23,6 @@ jobs:
         run: pip install -r requirements.txt -r requirements-test.txt
 
       - name: Rodar Testes
+        env:
+          PYTHONPATH: .
         run: python -m pytest
